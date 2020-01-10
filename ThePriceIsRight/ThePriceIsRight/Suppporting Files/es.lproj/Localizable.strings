@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ThePriceIsRight
+
+  Created by Dante Cervantes Vega on 19/12/19.
+  Copyright © 2019 Dante Vega. All rights reserved.
+*/
+
+"houseDescription.text" = "Descripción de la casa";
+"rooms.number" = "- Número de Habitaciones:";
+"baths.number" = "- Número de baños:";
+"garage.number" = "- Plazas de garage:";
+"construction.year" = "- Año de construcción:";
+"surface" = "- Tamaño:";
+"status" = "- Estado:";

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f0H-bb-ijV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="Raf-sn-60D">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="f0H-bb-ijV" customClass="PageViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdN-OD-T4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="-246"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HrF-5V-3oc">
+            <objects>
+                <viewController storyboardIdentifier="BathsVC" id="vJK-2P-l3O" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3AW-vS-jve">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-B8-3eA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el número de baños" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Po-zd-7sh">
+                                <rect key="frame" x="20" y="144" width="374" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="grR-rn-1z4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0uM-c3-oV3">
+                                <rect key="frame" x="16" y="432.5" width="382" height="32"/>
+                                <color key="backgroundColor" red="0.19825717809999999" green="0.1771236658" blue="0.16673311590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="cEz-wt-aSO"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="dataChanged:" destination="vJK-2P-l3O" eventType="valueChanged" id="zXc-SI-b50"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-l1-Dyl">
+                                <rect key="frame" x="16" y="854.5" width="382" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0Po-zd-7sh" firstAttribute="top" secondItem="iKt-F4-EM4" secondAttribute="top" constant="100" id="3EX-wJ-Hst"/>
+                            <constraint firstItem="iKt-F4-EM4" firstAttribute="trailing" secondItem="0Po-zd-7sh" secondAttribute="trailing" constant="20" id="MrV-o5-otO"/>
+                            <constraint firstItem="0Po-zd-7sh" firstAttribute="leading" secondItem="iKt-F4-EM4" secondAttribute="leading" constant="20" id="Ndo-k4-S4x"/>
+                            <constraint firstItem="qE6-l1-Dyl" firstAttribute="leading" secondItem="iKt-F4-EM4" secondAttribute="leading" constant="16" id="XqH-Wz-TwP"/>
+                            <constraint firstItem="0uM-c3-oV3" firstAttribute="leading" secondItem="iKt-F4-EM4" secondAttribute="leading" constant="16" id="Yol-e7-kqR"/>
+                            <constraint firstItem="qE6-l1-Dyl" firstAttribute="bottom" secondItem="iKt-F4-EM4" secondAttribute="bottom" constant="20" id="dxt-zS-8S6"/>
+                            <constraint firstItem="iKt-F4-EM4" firstAttribute="trailing" secondItem="qE6-l1-Dyl" secondAttribute="trailing" constant="16" id="nap-mH-d6H"/>
+                            <constraint firstItem="iKt-F4-EM4" firstAttribute="trailing" secondItem="0uM-c3-oV3" secondAttribute="trailing" constant="16" id="pEY-rd-Mm9"/>
+                            <constraint firstItem="0uM-c3-oV3" firstAttribute="top" secondItem="0Po-zd-7sh" secondAttribute="bottom" constant="206.5" id="tJU-Og-29v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iKt-F4-EM4"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="qE6-l1-Dyl" id="o0c-8j-V0Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGo-ya-soy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5942028985507" y="-611.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0pX-86-uzc">
+            <objects>
+                <viewController storyboardIdentifier="RoomsVC" id="U4w-yf-NdF" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMy-Dn-7eh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedrooms" translatesAutoresizingMaskIntoConstraints="NO" id="fWn-5V-qDh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el número de habitaciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-V6-Pcj">
+                                <rect key="frame" x="20" y="144" width="374" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Io0-Fp-BUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-Vn-KxU">
+                                <rect key="frame" x="16" y="432.5" width="382" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="AJh-eB-A1y"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dataChanged:" destination="U4w-yf-NdF" eventType="valueChanged" id="hNv-E8-mob"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YQ-pp-UuV">
+                                <rect key="frame" x="16" y="848.5" width="382" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FbK-V6-Pcj" firstAttribute="top" secondItem="jyG-Jk-uo3" secondAttribute="top" constant="100" id="4i1-PN-EyC"/>
+                            <constraint firstItem="jyG-Jk-uo3" firstAttribute="trailing" secondItem="hSg-Vn-KxU" secondAttribute="trailing" constant="16" id="FPs-ya-1iB"/>
+                            <constraint firstItem="jyG-Jk-uo3" firstAttribute="trailing" secondItem="1YQ-pp-UuV" secondAttribute="trailing" constant="16" id="JRw-EI-GFx"/>
+                            <constraint firstItem="hSg-Vn-KxU" firstAttribute="top" secondItem="FbK-V6-Pcj" secondAttribute="bottom" constant="206.5" id="Svr-sk-Sgh"/>
+                            <constraint firstItem="FbK-V6-Pcj" firstAttribute="leading" secondItem="jyG-Jk-uo3" secondAttribute="leading" constant="20" id="YkS-oM-2en"/>
+                            <constraint firstItem="hSg-Vn-KxU" firstAttribute="leading" secondItem="jyG-Jk-uo3" secondAttribute="leading" constant="16" id="gLc-Dh-fyi"/>
+                            <constraint firstItem="1YQ-pp-UuV" firstAttribute="leading" secondItem="jyG-Jk-uo3" secondAttribute="leading" constant="16" id="gku-hw-h7W"/>
+                            <constraint firstItem="jyG-Jk-uo3" firstAttribute="trailing" secondItem="FbK-V6-Pcj" secondAttribute="trailing" constant="20" id="mf1-6h-ZMn"/>
+                            <constraint firstAttribute="bottom" secondItem="1YQ-pp-UuV" secondAttribute="bottom" constant="20" id="tE9-dZ-QE2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jyG-Jk-uo3"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="1YQ-pp-UuV" id="0eb-B5-aEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9i-ku-2TO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5942028985507" y="164.73214285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H0j-xN-qyR">
+            <objects>
+                <viewController storyboardIdentifier="SizeVC" id="dbc-ec-XSW" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EeW-xz-sAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surface" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-Fm-zFc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la superficie de la casa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYK-1g-pqL">
+                                <rect key="frame" x="20" y="144" width="374" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="qfT-h9-MsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="oqG-52-XEV">
+                                <rect key="frame" x="20" y="433" width="374" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="35" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="otC-JA-5rG">
+                                        <rect key="frame" x="-2" y="0.0" width="254" height="31"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="s5L-gE-Wbn"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="dataChanged:" destination="dbc-ec-XSW" eventType="valueChanged" id="Emy-b9-b7E"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 m2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNu-Rk-Wad">
+                                        <rect key="frame" x="276" y="0.0" width="98" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HYE-SY-1FR"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-Qu-ysk">
+                                <rect key="frame" x="20" y="483" width="374" height="359"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BMt-fF-sPz" firstAttribute="trailing" secondItem="KhQ-Qu-ysk" secondAttribute="trailing" constant="20" id="0t9-lY-dKL"/>
+                            <constraint firstItem="oqG-52-XEV" firstAttribute="centerX" secondItem="EeW-xz-sAQ" secondAttribute="centerX" id="6QL-iH-ayd"/>
+                            <constraint firstItem="KhQ-Qu-ysk" firstAttribute="leading" secondItem="BMt-fF-sPz" secondAttribute="leading" constant="20" id="BlH-gr-QmC"/>
+                            <constraint firstItem="KhQ-Qu-ysk" firstAttribute="top" secondItem="oqG-52-XEV" secondAttribute="bottom" constant="20" id="LCF-WN-QnQ"/>
+                            <constraint firstItem="oqG-52-XEV" firstAttribute="centerY" secondItem="EeW-xz-sAQ" secondAttribute="centerY" id="Rh8-sA-X6e"/>
+                            <constraint firstItem="zYK-1g-pqL" firstAttribute="top" secondItem="BMt-fF-sPz" secondAttribute="top" constant="100" id="STQ-kW-Jwx"/>
+                            <constraint firstItem="BMt-fF-sPz" firstAttribute="trailing" secondItem="zYK-1g-pqL" secondAttribute="trailing" constant="20" id="Tc0-jP-ksC"/>
+                            <constraint firstItem="BMt-fF-sPz" firstAttribute="bottom" secondItem="KhQ-Qu-ysk" secondAttribute="bottom" constant="20" id="UlX-Uh-tkm"/>
+                            <constraint firstAttribute="trailing" secondItem="oqG-52-XEV" secondAttribute="trailing" constant="20" id="e9j-6p-5Vh"/>
+                            <constraint firstItem="zYK-1g-pqL" firstAttribute="leading" secondItem="BMt-fF-sPz" secondAttribute="leading" constant="20" id="fpe-0z-hjh"/>
+                            <constraint firstItem="oqG-52-XEV" firstAttribute="leading" secondItem="EeW-xz-sAQ" secondAttribute="leading" constant="20" id="mJC-vc-smH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BMt-fF-sPz"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblData" destination="BNu-Rk-Wad" id="nF7-90-t9Z"/>
+                        <outlet property="lblDescription" destination="KhQ-Qu-ysk" id="FjT-O2-XcT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytc-8K-DjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962.3188405797105" y="-611.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r4p-Fj-p6d">
+            <objects>
+                <viewController storyboardIdentifier="YearVC" id="ls7-Zm-NSb" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezt-q5-twc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="construction" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-bb-GyV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el año de construcción de la casa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVo-E2-Xbm">
+                                <rect key="frame" x="20" y="144" width="374" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0yK-5L-AEN"/>
+                                    <constraint firstAttribute="height" constant="82" id="oOq-KG-f7X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nV6-1f-9WE">
+                                <rect key="frame" x="40" y="418" width="334" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1975" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-HM-LRz">
+                                        <rect key="frame" x="0.0" y="9.5" width="166" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1975" minimumValue="1948" maximumValue="2018" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-x8-NB4">
+                                        <rect key="frame" x="234" y="14" width="100" height="32"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="gQu-4d-ulg"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="dataChanged:" destination="ls7-Zm-NSb" eventType="valueChanged" id="5UK-24-ryW"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KYW-gK-dvc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-T9-RMY">
+                                <rect key="frame" x="16" y="498" width="382" height="344"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nV6-1f-9WE" firstAttribute="centerY" secondItem="ezt-q5-twc" secondAttribute="centerY" id="1rs-pf-fYt"/>
+                            <constraint firstItem="nV6-1f-9WE" firstAttribute="leading" secondItem="qRH-79-8LE" secondAttribute="leading" constant="40" id="2dO-iG-mxn"/>
+                            <constraint firstItem="qRH-79-8LE" firstAttribute="trailing" secondItem="uda-T9-RMY" secondAttribute="trailing" constant="16" id="9uI-ho-npT"/>
+                            <constraint firstItem="uda-T9-RMY" firstAttribute="top" secondItem="nV6-1f-9WE" secondAttribute="bottom" constant="20" id="AOE-zi-mvc"/>
+                            <constraint firstItem="qRH-79-8LE" firstAttribute="trailing" secondItem="nV6-1f-9WE" secondAttribute="trailing" constant="40" id="b6R-9c-3hx"/>
+                            <constraint firstItem="uda-T9-RMY" firstAttribute="leading" secondItem="qRH-79-8LE" secondAttribute="leading" constant="16" id="gHe-di-fFJ"/>
+                            <constraint firstItem="YVo-E2-Xbm" firstAttribute="centerX" secondItem="ezt-q5-twc" secondAttribute="centerX" id="hTM-rQ-gFO"/>
+                            <constraint firstItem="nV6-1f-9WE" firstAttribute="centerX" secondItem="ezt-q5-twc" secondAttribute="centerX" id="m2t-x5-sWu"/>
+                            <constraint firstItem="qRH-79-8LE" firstAttribute="bottom" secondItem="uda-T9-RMY" secondAttribute="bottom" constant="20" id="t07-Ke-xVC"/>
+                            <constraint firstItem="YVo-E2-Xbm" firstAttribute="top" secondItem="qRH-79-8LE" secondAttribute="top" constant="100" id="z6W-32-Gj1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qRH-79-8LE"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblData" destination="Trn-HM-LRz" id="rnT-49-hLi"/>
+                        <outlet property="lblDescription" destination="uda-T9-RMY" id="nL1-Cc-6RA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAY-mE-uFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.8985507246377" y="164.73214285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eDo-2i-URG">
+            <objects>
+                <viewController storyboardIdentifier="CarsVC" id="X0O-hT-Vk4" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gK-yy-iV1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garage" translatesAutoresizingMaskIntoConstraints="NO" id="Y1S-yQ-XaG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el número de lugares de estacionamiento" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1e-AB-AJW">
+                                <rect key="frame" x="20" y="144" width="374" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="qys-o5-nK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EoW-zH-rlZ">
+                                <rect key="frame" x="16" y="432.5" width="382" height="32"/>
+                                <color key="backgroundColor" red="0.40540134909999997" green="0.4199831188" blue="0.42430955170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="vGX-HV-tUT"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Sin garaje"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="dataChanged:" destination="X0O-hT-Vk4" eventType="valueChanged" id="Myy-M5-s8e"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVY-zC-gqK">
+                                <rect key="frame" x="16" y="848.5" width="382" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aVY-zC-gqK" secondAttribute="bottom" constant="20" id="2dG-Eb-6Za"/>
+                            <constraint firstItem="u1e-AB-AJW" firstAttribute="top" secondItem="ald-X7-Hxe" secondAttribute="top" constant="100" id="BBy-k6-ZTf"/>
+                            <constraint firstItem="ald-X7-Hxe" firstAttribute="trailing" secondItem="aVY-zC-gqK" secondAttribute="trailing" constant="16" id="In6-uQ-YWe"/>
+                            <constraint firstItem="EoW-zH-rlZ" firstAttribute="leading" secondItem="ald-X7-Hxe" secondAttribute="leading" constant="16" id="NHN-4k-QqL"/>
+                            <constraint firstItem="u1e-AB-AJW" firstAttribute="centerX" secondItem="7gK-yy-iV1" secondAttribute="centerX" id="VWv-nF-Yu8"/>
+                            <constraint firstItem="ald-X7-Hxe" firstAttribute="trailing" secondItem="EoW-zH-rlZ" secondAttribute="trailing" constant="16" id="frZ-nE-6sb"/>
+                            <constraint firstItem="EoW-zH-rlZ" firstAttribute="top" secondItem="u1e-AB-AJW" secondAttribute="bottom" constant="165.5" id="nYE-yz-euH"/>
+                            <constraint firstItem="aVY-zC-gqK" firstAttribute="leading" secondItem="ald-X7-Hxe" secondAttribute="leading" constant="16" id="pil-f6-ydp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ald-X7-Hxe"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="aVY-zC-gqK" id="jBo-Pj-dHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNV-w5-aAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.8985507246377" y="-611.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="flJ-t5-hNc">
+            <objects>
+                <viewController storyboardIdentifier="ConditionVC" id="Jea-yA-ab2" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBh-Yn-dfr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quality" translatesAutoresizingMaskIntoConstraints="NO" id="bl4-dp-cnm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el estado actual de la casa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-PF-Mgj">
+                                <rect key="frame" x="20" y="94" width="374" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="WmK-wl-0EI"/>
+                                    <constraint firstAttribute="height" constant="82" id="vfZ-im-EY9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iKJ-3I-irW">
+                                <rect key="frame" x="2.5" y="434" width="409" height="29"/>
+                                <color key="backgroundColor" red="0.63197386259999999" green="0.43837845330000003" blue="0.23066738249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="LGp-sY-etw"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Malo"/>
+                                    <segment title="Aceptable"/>
+                                    <segment title="Normal"/>
+                                    <segment title="Bueno"/>
+                                    <segment title="Excelente"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="selectedSegmentTintColor" red="0.83227235079999995" green="0.84183746579999996" blue="0.84546869989999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dataChanged:" destination="Jea-yA-ab2" eventType="valueChanged" id="5Ma-oA-KxB"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-83-Tp0">
+                                <rect key="frame" x="20" y="482" width="374" height="360"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="l8W-Ll-UDA" firstAttribute="bottom" secondItem="ryr-83-Tp0" secondAttribute="bottom" constant="20" id="44u-MY-a5q"/>
+                            <constraint firstItem="iKJ-3I-irW" firstAttribute="centerX" secondItem="GBh-Yn-dfr" secondAttribute="centerX" id="C7D-59-D1Q"/>
+                            <constraint firstItem="ryr-83-Tp0" firstAttribute="top" secondItem="iKJ-3I-irW" secondAttribute="bottom" constant="20" id="Iu6-Dn-CpQ"/>
+                            <constraint firstItem="iKJ-3I-irW" firstAttribute="centerY" secondItem="GBh-Yn-dfr" secondAttribute="centerY" id="cpE-3G-Y8S"/>
+                            <constraint firstItem="TFg-PF-Mgj" firstAttribute="top" secondItem="l8W-Ll-UDA" secondAttribute="top" constant="50" id="e5x-Yi-X6v"/>
+                            <constraint firstItem="TFg-PF-Mgj" firstAttribute="centerX" secondItem="GBh-Yn-dfr" secondAttribute="centerX" id="ew3-bc-dl5"/>
+                            <constraint firstItem="l8W-Ll-UDA" firstAttribute="trailing" secondItem="ryr-83-Tp0" secondAttribute="trailing" constant="20" id="lo4-fj-xC1"/>
+                            <constraint firstItem="ryr-83-Tp0" firstAttribute="leading" secondItem="l8W-Ll-UDA" secondAttribute="leading" constant="20" id="pcr-eh-2if"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l8W-Ll-UDA"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="ryr-83-Tp0" id="iJ0-PR-HfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71u-II-dgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962.3188405797105" y="164.73214285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mjo-Of-8aU">
+            <objects>
+                <viewController storyboardIdentifier="ResumenVC" id="u8m-Et-s74" customClass="ViewController" customModule="ThePriceIsRight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sup-EE-Knb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resume" translatesAutoresizingMaskIntoConstraints="NO" id="Gb7-3w-TPh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El valor estimado de la casa es de:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD5-f9-ivo">
+                                <rect key="frame" x="20" y="144" width="374" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="eAF-iA-kgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.999€" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9o-nl-X3l">
+                                <rect key="frame" x="20" y="427.5" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="eH0-t7-mte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la casa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-hV-UGj">
+                                <rect key="frame" x="20" y="854.5" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.92472878889999999" green="0.92472878889999999" blue="0.92472878889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yD5-f9-ivo" firstAttribute="leading" secondItem="zj6-ze-zvb" secondAttribute="leading" constant="20" id="0zg-m7-aQp"/>
+                            <constraint firstItem="ghI-hV-UGj" firstAttribute="bottom" secondItem="zj6-ze-zvb" secondAttribute="bottom" constant="20" id="D9M-8E-SFP"/>
+                            <constraint firstItem="yD5-f9-ivo" firstAttribute="top" secondItem="zj6-ze-zvb" secondAttribute="top" constant="100" id="UfA-Nr-eu2"/>
+                            <constraint firstItem="zj6-ze-zvb" firstAttribute="trailing" secondItem="yD5-f9-ivo" secondAttribute="trailing" constant="20" id="VWf-yy-wG0"/>
+                            <constraint firstItem="ghI-hV-UGj" firstAttribute="leading" secondItem="zj6-ze-zvb" secondAttribute="leading" constant="20" id="eEm-aC-c6b"/>
+                            <constraint firstItem="zj6-ze-zvb" firstAttribute="trailing" secondItem="ghI-hV-UGj" secondAttribute="trailing" constant="20" id="eqT-l3-pjp"/>
+                            <constraint firstItem="b9o-nl-X3l" firstAttribute="centerY" secondItem="sup-EE-Knb" secondAttribute="centerY" id="sXF-yC-OyH"/>
+                            <constraint firstItem="b9o-nl-X3l" firstAttribute="centerX" secondItem="sup-EE-Knb" secondAttribute="centerX" id="u5Q-bc-oBc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zj6-ze-zvb"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="ghI-hV-UGj" id="YTF-YZ-Fzc"/>
+                        <outlet property="lblResults" destination="b9o-nl-X3l" id="We3-Fs-XpI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOA-bV-5me" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3976.811594202899" y="-246.42857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bathroom" width="1013" height="1350.5"/>
+        <image name="bedrooms" width="1063.5" height="1891"/>
+        <image name="construction" width="1295.5" height="1619.5"/>
+        <image name="garage" width="1286" height="1929.5"/>
+        <image name="quality" width="1345" height="2015"/>
+        <image name="resume" width="1550" height="2138"/>
+        <image name="surface" width="1005" height="1340"/>
+    </resources>
+</document>

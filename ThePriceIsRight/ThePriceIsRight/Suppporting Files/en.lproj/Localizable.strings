@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ThePriceIsRight
+
+  Created by Dante Cervantes Vega on 19/12/19.
+  Copyright © 2019 Dante Vega. All rights reserved.
+*/
+
+"houseDescription.text" = "House description";
+"rooms.number" = "- Bedrooms number:";
+"baths.number" = "- Bathrooms number:";
+"garage.number" = "- Parking places:";
+"construction.year" = "- Construction year:";
+"surface" = "- Surface:";
+"status" = "- Status:";

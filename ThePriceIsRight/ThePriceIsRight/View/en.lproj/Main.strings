@@ -1,0 +1,105 @@
+
+/* Class = "UILabel"; text = "Selecciona el número de baños"; ObjectID = "0Po-zd-7sh"; */
+"0Po-zd-7sh.text" = "Select the number of bathrooms";
+
+/* Class = "UISegmentedControl"; 0uM-c3-oV3.segmentTitles[0] = "1"; ObjectID = "0uM-c3-oV3"; */
+"0uM-c3-oV3.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; 0uM-c3-oV3.segmentTitles[1] = "2"; ObjectID = "0uM-c3-oV3"; */
+"0uM-c3-oV3.segmentTitles[1]" = "2";
+
+/* Class = "UISegmentedControl"; 0uM-c3-oV3.segmentTitles[2] = "3"; ObjectID = "0uM-c3-oV3"; */
+"0uM-c3-oV3.segmentTitles[2]" = "3";
+
+/* Class = "UISegmentedControl"; 0uM-c3-oV3.segmentTitles[3] = "4"; ObjectID = "0uM-c3-oV3"; */
+"0uM-c3-oV3.segmentTitles[3]" = "4";
+
+/* Class = "UISegmentedControl"; 0uM-c3-oV3.segmentTitles[4] = "5"; ObjectID = "0uM-c3-oV3"; */
+"0uM-c3-oV3.segmentTitles[4]" = "5";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "1YQ-pp-UuV"; */
+"1YQ-pp-UuV.text" = "House Description";
+
+/* Class = "UILabel"; text = "100 m2"; ObjectID = "BNu-Rk-Wad"; */
+"BNu-Rk-Wad.text" = "100 m2";
+
+/* Class = "UISegmentedControl"; EoW-zH-rlZ.segmentTitles[0] = "Sin garaje"; ObjectID = "EoW-zH-rlZ"; */
+"EoW-zH-rlZ.segmentTitles[0]" = "0";
+
+/* Class = "UISegmentedControl"; EoW-zH-rlZ.segmentTitles[1] = "1"; ObjectID = "EoW-zH-rlZ"; */
+"EoW-zH-rlZ.segmentTitles[1]" = "1";
+
+/* Class = "UISegmentedControl"; EoW-zH-rlZ.segmentTitles[2] = "2"; ObjectID = "EoW-zH-rlZ"; */
+"EoW-zH-rlZ.segmentTitles[2]" = "2";
+
+/* Class = "UILabel"; text = "Selecciona el número de habitaciones"; ObjectID = "FbK-V6-Pcj"; */
+"FbK-V6-Pcj.text" = "Select the number of bedrooms";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "KhQ-Qu-ysk"; */
+"KhQ-Qu-ysk.text" = "House Description";
+
+/* Class = "UILabel"; text = "Selecciona el estado actual de la casa"; ObjectID = "TFg-PF-Mgj"; */
+"TFg-PF-Mgj.text" = "Select status of the house";
+
+/* Class = "UILabel"; text = "1975"; ObjectID = "Trn-HM-LRz"; */
+"Trn-HM-LRz.text" = "1975";
+
+/* Class = "UILabel"; text = "Selecciona el año de construcción de la casa"; ObjectID = "YVo-E2-Xbm"; */
+"YVo-E2-Xbm.text" = "Select the year of construction of the house";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "aVY-zC-gqK"; */
+"aVY-zC-gqK.text" = "House Description";
+
+/* Class = "UILabel"; text = "999.999€"; ObjectID = "b9o-nl-X3l"; */
+"b9o-nl-X3l.text" = "999.999€";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "ghI-hV-UGj"; */
+"ghI-hV-UGj.text" = "House Description";
+
+/* Class = "UISegmentedControl"; hSg-Vn-KxU.segmentTitles[0] = "1"; ObjectID = "hSg-Vn-KxU"; */
+"hSg-Vn-KxU.segmentTitles[0]" = "1";
+
+/* Class = "UISegmentedControl"; hSg-Vn-KxU.segmentTitles[1] = "2"; ObjectID = "hSg-Vn-KxU"; */
+"hSg-Vn-KxU.segmentTitles[1]" = "2";
+
+/* Class = "UISegmentedControl"; hSg-Vn-KxU.segmentTitles[2] = "3"; ObjectID = "hSg-Vn-KxU"; */
+"hSg-Vn-KxU.segmentTitles[2]" = "3";
+
+/* Class = "UISegmentedControl"; hSg-Vn-KxU.segmentTitles[3] = "4"; ObjectID = "hSg-Vn-KxU"; */
+"hSg-Vn-KxU.segmentTitles[3]" = "4";
+
+/* Class = "UISegmentedControl"; hSg-Vn-KxU.segmentTitles[4] = "5"; ObjectID = "hSg-Vn-KxU"; */
+"hSg-Vn-KxU.segmentTitles[4]" = "5";
+
+/* Class = "UISegmentedControl"; iKJ-3I-irW.segmentTitles[0] = "Malo"; ObjectID = "iKJ-3I-irW"; */
+"iKJ-3I-irW.segmentTitles[0]" = "Bad";
+
+/* Class = "UISegmentedControl"; iKJ-3I-irW.segmentTitles[1] = "Aceptable"; ObjectID = "iKJ-3I-irW"; */
+"iKJ-3I-irW.segmentTitles[1]" = "Aceptable";
+
+/* Class = "UISegmentedControl"; iKJ-3I-irW.segmentTitles[2] = "Normal"; ObjectID = "iKJ-3I-irW"; */
+"iKJ-3I-irW.segmentTitles[2]" = "Normal";
+
+/* Class = "UISegmentedControl"; iKJ-3I-irW.segmentTitles[3] = "Bueno"; ObjectID = "iKJ-3I-irW"; */
+"iKJ-3I-irW.segmentTitles[3]" = "Good";
+
+/* Class = "UISegmentedControl"; iKJ-3I-irW.segmentTitles[4] = "Excelente"; ObjectID = "iKJ-3I-irW"; */
+"iKJ-3I-irW.segmentTitles[4]" = "Excelent";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "qE6-l1-Dyl"; */
+"qE6-l1-Dyl.text" = "House Description";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "ryr-83-Tp0"; */
+"ryr-83-Tp0.text" = "House Description";
+
+/* Class = "UILabel"; text = "Selecciona el número de lugares de estacionamiento"; ObjectID = "u1e-AB-AJW"; */
+"u1e-AB-AJW.text" = "Select the number of parking places";
+
+/* Class = "UILabel"; text = "Descripción de la casa"; ObjectID = "uda-T9-RMY"; */
+"uda-T9-RMY.text" = "House Description";
+
+/* Class = "UILabel"; text = "El valor estimado de la casa es de:"; ObjectID = "yD5-f9-ivo"; */
+"yD5-f9-ivo.text" = "The estimated value of the house is:";
+
+/* Class = "UILabel"; text = "Selecciona la superficie de la casa"; ObjectID = "zYK-1g-pqL"; */
+"zYK-1g-pqL.text" = "Select the surface of the house";
